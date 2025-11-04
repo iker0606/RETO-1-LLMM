@@ -54,57 +54,15 @@ main {
   font-size: 22px;
   font-weight: normal;
   color: #444;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .titulo {
   font-size: 32px;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: rgb(231, 112, 52);
   text-align: center;
   margin-bottom: 20px;
-}
-
-.descripcion {
-  font-size: 18px;
-  color: #333;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.descripcion em {
-  font-style: italic;
-}
-
-.subtitulo {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #444;
-  border-bottom: 1px dotted #666;
-  display: inline-block;
-  padding-bottom: 4px;
-}
-
-.lista-campus {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
-  margin-top: 25px;
-  margin-bottom: 40px;
-  width: 90%;
-  max-width: 800px;
-}
-
-.lista-campus a {
-  display: block;
-  color: #000;
-  background-color: rgb(255, 248, 235);
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 table {
@@ -125,6 +83,11 @@ th, td {
   font-size: 16px;
 }
 
+td {
+    color: rgb(231, 112, 52);
+    font-weight: bold;
+}
+
 th {
   background-color: rgb(231, 112, 52);
   color: rgb(0, 0, 0);
@@ -132,42 +95,36 @@ th {
   letter-spacing: 1px;
 }
 
+.lista-campus {
+  display: flex;
+  flex-wrap: wrap;        /* Para que se acomoden en varias filas si es necesario */
+  justify-content: center; /* Centra los elementos */
+  gap: 1rem;              /* Espacio entre elementos */
+  margin: 1% 0;
+}
+
+.lista-campus p {
+  color: rgb(231, 112, 52);
+  font-weight: bold;
+  background-color: rgb(255, 248, 235);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+  text-align: center;
+  flex: 1 1 200px;       /* Se adaptan al ancho disponible */
+  max-width: 300px;      /* Para que no crezcan demasiado */
+}
+
 footer {
   background-color: rgb(231, 112, 52);
   color: rgb(0, 0, 0);
   text-align: center;
-  padding: 18px 10px;
-  margin-top: 40px;
+  padding: 1%;
+  margin-top: 2%;
   font-weight: bold;
-  letter-spacing: 0.5px;
 }
 
-@media (max-width: 600px) {
-  .menu {
-    flex-direction: column;
-    gap: 10px;
-  }
 
-  .titulo {
-    font-size: 26px;
-  }
-
-  .descripcion {
-    font-size: 16px;
-  }
-
-  table {
-    width: 95%;
-    font-size: 14px;
-  }
-
-  th, td {
-    padding: 10px;
-  }
-
-  .lista-campus {
-    grid-template-columns: 1fr;
-  }
-}
 
 
