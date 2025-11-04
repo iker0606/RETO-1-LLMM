@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(245, 222, 181);
+    margin: 0;
+    padding: 0;
+}
+
+/* Menú superior */
+.menu {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    background-color: rgb(231, 112, 52);
+    padding: 12px 20px;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.menu a:hover {
+    transform: scale(1.05);
+}
+
+/* Cajas guía del menú */
+.guia_menu {
+    background-color: rgb(171, 229, 232);
+    border-radius: 10px;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.guia_menu:hover {
+    transform: scale(1.05);
+}
+
+footer {
+  background-color: rgb(231, 112, 52);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 18px 10px;
+  margin-top: 40px;
+}
