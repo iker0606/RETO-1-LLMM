@@ -60,7 +60,7 @@ main {
 .titulo {
   font-size: 32px;
   font-weight: bold;
-  color: rgb(231, 112, 52);
+  color: rgb(0, 0, 0);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -124,6 +124,7 @@ footer {
   margin-top: 2%;
   font-weight: bold;
 }
+
 
 
 
