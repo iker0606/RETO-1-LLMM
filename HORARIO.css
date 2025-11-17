@@ -1,45 +1,35 @@
 body {
-  font-family: Arial, sans-serif;
-  background: rgb(245, 222, 181);
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(245, 222, 181);
+    margin: 0;
+    padding: 0;
 }
 
 .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  background-color: rgb(231, 112, 52);
-  padding: 12px 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    background-color: rgb(231, 112, 52);
+    padding: 12px 20px;
 }
 
 .menu a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 8px 14px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
 .menu a:hover {
   transform: scale(1.05);
-}
-
-.guia_menu {
-  background-color: rgb(171, 229, 232);
-  border-radius: 10px;
-  padding: 8px 16px;
-  text-align: center;
-  font-size: 16px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.guia_menu:hover {
-  transform: scale(1.05);
-  background-color: rgb(144, 211, 214);
+  background-color: aquamarine;
+  color: black;
 }
 
 main {
@@ -50,14 +40,14 @@ main {
   padding: 40px 20px;
 }
 
-.seccion {
+#excepto {
   font-size: 22px;
   font-weight: normal;
   color: #444;
   margin-bottom: 10px;
 }
 
-.titulo {
+#titulo {
   font-size: 32px;
   font-weight: bold;
   color: rgb(0, 0, 0);
@@ -71,14 +61,12 @@ table {
   max-width: 800px;
   background-color: rgb(255, 248, 235);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  overflow: hidden;
   margin-top: 20px;
 }
 
 th, td {
-  border: 1px solid #ccc;
   text-align: center;
+  border: 1px solid #ccc;
   padding: 14px;
   font-size: 16px;
 }
@@ -91,19 +79,17 @@ td {
 th {
   background-color: rgb(231, 112, 52);
   color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-.lista-campus {
+.festivos {
   display: flex;
-  flex-wrap: wrap;        /* Para que se acomoden en varias filas si es necesario */
-  justify-content: center; /* Centra los elementos */
-  gap: 1rem;              /* Espacio entre elementos */
+  flex-wrap: wrap;        
+  justify-content: center; 
+  gap: 1rem;              
   margin: 1% 0;
 }
 
-.lista-campus p {
+.festivos p {
   color: rgb(231, 112, 52);
   font-weight: bold;
   background-color: rgb(255, 248, 235);
@@ -112,8 +98,32 @@ th {
   padding: 1rem 1.5rem;
   font-size: 16px;
   text-align: center;
-  flex: 1 1 200px;       /* Se adaptan al ancho disponible */
-  max-width: 300px;      /* Para que no crezcan demasiado */
+  flex: 1 1 200px;       
+  max-width: 300px;      
+}
+
+.menu_inferior {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #333;
+  padding: 14px 10px;
+}
+
+.menu_inferior a {
+  color: #f9f9f9;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.menu_inferior a:hover {
+  background-color: rgb(231, 112, 52);
+  color: black;
 }
 
 footer {
@@ -121,6 +131,5 @@ footer {
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 1%;
-  margin-top: 2%;
   font-weight: bold;
 }
